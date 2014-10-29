@@ -18,7 +18,7 @@
 &nbsp; |
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
 &nbsp; |
-        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/NewRecipe.aspx">About Us</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
 &nbsp;|
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactform.aspx">Contact</asp:HyperLink>
     <form id="form1" runat="server">
