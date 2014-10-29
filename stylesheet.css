@@ -1,0 +1,27 @@
+﻿
+body {background-color: #D2B48C;
+   text-align:center;
+}
+
+.validationError {color:#696969; font-weight:bold;}
+.left {
+    text-align:left;
+    background-color: #F08080;
+    border:1px #F08080;
+
+}
+
+.center {
+    text-align: center
+
+}
+.right {
+    text-align: right;
+    background-color: #FFFF99;
+    border: 1px #F08080;
+}
+
+.header{text-align: center; 
+        font-size: x-large;
+        font-weight: bold;}
+}

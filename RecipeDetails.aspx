@@ -4,9 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Recipe Details</title>
+    <link rel="stylesheet" type="text/css" href ="~/stylesheet.css" />
 </head>
 <body>
+    <div class="header">Wicked Easy Recipes</div>
+    <div class="header2">Using 5 Ingredients or Less!</div>
+    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+&nbsp; |
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
+&nbsp; |
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/NewRecipe.aspx">About Us</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/contactform.aspx">Contact</asp:HyperLink>
     <form id="form1" runat="server">
     <div>
     
@@ -42,13 +52,15 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
-&nbsp; |
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
+       
     
     </div>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" Width="205px">
-            <Fields>
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="98px" Width="455px" HorizontalAlign="center">
+           <CommandRowStyle BackColor="#FFFF99" Font-Bold="True" />
+            <EditRowStyle BackColor="#F08080" />
+            <FieldHeaderStyle BackColor="#FFFF99" Font-Bold="True" />
+
+             <Fields>
                 <asp:BoundField DataField="recipeName" HeaderText="Recipe Name" SortExpression="recipeName" />
                 <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
                 <asp:BoundField DataField="Ingred1" HeaderText="Ingredient #1" SortExpression="Ingred1" />
@@ -60,7 +72,13 @@
                 <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
+            <FooterStyle BackColor="#FFFF99" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#FFFF99" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#FFFF99" ForeColor="LightCoral" HorizontalAlign="Center" />
+            <RowStyle BackColor="LightCoral" />
+
         </asp:DetailsView>
     </form>
+    <p class="footer"> © 2014 Software Development & Design</p>
 </body>
 </html>
