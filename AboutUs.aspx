@@ -9,7 +9,9 @@
 </head>
 <body>
      <div class="header">Wicked Easy Recipes</div>
-    <div class="header2">Using 5 Ingredients or Less!</div>
+    <div class="header2">Using 5 Ingredients or Less!<br />
+        <br />
+     </div>
     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
 &nbsp; |
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
@@ -17,11 +19,13 @@
         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
 &nbsp;|
         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/contactform.aspx">Contact</asp:HyperLink>
+     <br />
     <form id="form1" runat="server">
-    <div class="aboutus">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eu orci cursus congue. Donec metus nibh, convallis id augue id, vulputate aliquam lorem. Fusce id augue bibendum, luctus lacus vel, rhoncus lectus. Aliquam rutrum luctus mauris ac porttitor. Etiam risus odio, pretium sit amet porttitor ut, ornare et felis. In eget dolor sit amet sem aliquam cursus nec ac justo. Ut dignissim arcu in placerat convallis. Quisque ut enim ut erat bibendum ornare. Aliquam consectetur aliquam eleifend. Praesent mi erat, facilisis id odio eget, ultricies condimentum libero. Praesent consectetur tincidunt augue, eu maximus erat convallis at. 
+    <div style="padding-right: 25%; padding-left: 25%; font-style: italic; color: white">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eu orci cursus congue. Donec metus nibh, convallis id augue id, vulputate aliquam lorem. Fusce id augue bibendum, luctus lacus vel, rhoncus lectus. Aliquam rutrum luctus mauris ac porttitor. Etiam risus odio, pretium sit amet porttitor ut, ornare et felis. In eget dolor sit amet sem aliquam cursus nec ac justo. Ut dignissim arcu in placerat convallis. Quisque ut enim ut erat bibendum ornare. Aliquam consectetur aliquam eleifend. Praesent mi erat, facilisis id odio eget, ultricies condimentum libero. Praesent consectetur tincidunt augue, eu maximus erat convallis at. </p>
 
-Fusce consectetur nisi ac ipsum varius pellentesque. Aliquam erat volutpat. Quisque et venenatis eros, eget faucibus nisi. Duis eros felis, mattis sit amet consequat ut, posuere vel nisl. Ut sed arcu pulvinar, rhoncus justo ut, pretium dui. Praesent viverra augue pellentesque nunc vestibulum, eu viverra urna venenatis. Ut molestie, libero at tincidunt tincidunt, sapien lacus tempus nisl, sit amet laoreet urna justo eget velit. Praesent ultrices magna sit amet turpis convallis aliquet. 
+
+<p>Fusce consectetur nisi ac ipsum varius pellentesque. Aliquam erat volutpat. Quisque et venenatis eros, eget faucibus nisi. Duis eros felis, mattis sit amet consequat ut, posuere vel nisl. Ut sed arcu pulvinar, rhoncus justo ut, pretium dui. Praesent viverra augue pellentesque nunc vestibulum, eu viverra urna venenatis. Ut molestie, libero at tincidunt tincidunt, sapien lacus tempus nisl, sit amet laoreet urna justo eget velit. Praesent ultrices magna sit amet turpis convallis aliquet. </p>
 
     </div>
         <p class="footer"> © 2014 Software Development & Design</p>
